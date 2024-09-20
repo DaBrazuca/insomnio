@@ -1,0 +1,252 @@
+*{
+    background-color: rgb(26, 24, 24);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    border-bottom: 2px solid White;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    height: 70px;
+    width: auto;
+    border-radius: 50px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 500px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+button{
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.botoncinho{
+    color: black;
+    background-color: white;
+}
+
+.botoncinho:hover{
+    color: rgb(167, 7, 207);
+    transition-duration: 0.2s;
+}
+
+.ell{
+    border-left: 2px solid white;
+}
+
+.aaa:hover{
+    transition-duration: 0.3s;
+    color: rgb(0, 0, 0);
+    background-color: grey;
+    border-radius: 10px;
+}
+.alrededorlogo{
+    padding: 3px;
+    border-radius: 50px;
+}
+
+.aviso{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    font-size: 100px;
+}
+
+.crds{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(59, 58, 58);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.origenn{
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.crea{
+    border-radius: 30px;
+    border: 2px dashed white;
+    padding: 20px 20px 40px 20px;
+}
+
+.creditom{
+    color: white;
+    padding: 10px 150px 40px 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.elori{
+    padding-top: 10px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+li{
+    list-style: none;
+}
+
+.crlista{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    border-radius: 30px;
+}
+
+.mimensaje{
+    border: 3px gray double;
+}
+
+footer{
+    height: 80px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 2px solid rgb(65, 70, 70);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+
+h1, h2{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.conp{
+    color: white;
+    font-size: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 70px;
+}
+
+a{
+    padding: 5px 10px;
+}
+
+li{
+    color: grey;
+}
+
+.sliderbox{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+}
+
+.sliderbox ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternaate ease-in-out;
+}
+
+.sliderbox li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.sliderbox img{
+    width: 100%;
+}
+
+.primertitulo{
+    padding-top: 30px;
+}
+
+.caja{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sint{
+    margin-left: 40px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.Contenido{
+    padding-bottom: 30px;
+}
+
+.fp{
+    color: rgb(160, 159, 159);
+}
+
+@keyframes slide {
+    0% {margin-left: 0; }
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -100%;}
+    75%{margin-left: -100%;}
+}
+
+@media(width < 800px){
+    .caja{
+       
+        grid-template-columns: repeat(3, 1fr);
+      
+    }
+    
+}
+
+@media(width < 600px){
+    .caja{
+       
+        grid-template-columns: repeat(2, 1fr);
+      
+    }
+    
+}
+
+@media(width < 400px){
+    .caja{
+       
+        grid-template-columns: repeat(1, 1fr);
+      
+    }
+    
+}
